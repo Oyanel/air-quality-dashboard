@@ -1,0 +1,8 @@
+{
+  "BASE_LOGIN_ROUTE": "/auth/login",
+  "TENANT_DEVICE_ROUTE": "/tenant/devices?limit=%limit%&type=%type%",
+  "DEVICE_TIMESERIES": "/plugins/telemetry/%entityType%/%entityId%/values/timeseries",
+  "DEVICE_TIMESERIES_DATED": "/plugins/telemetry/%entityType%/%entityId%/values/timeseries?keys=%keys%&startTs=%start%&endTs=%end%&limit=%limit%&agg=NONE",
+  "DEVICE_ATTRIBUTES": "/plugins/telemetry/%entityType%/%entityId%/keys/attributes",
+  "DEVICE_ROUTE": "/device/%deviceId%"
+}

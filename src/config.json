@@ -1,0 +1,100 @@
+{
+  "thingsboard": {
+    "user": "to edit (mail)",
+    "password": "to edit",
+    "endpoint": "/api",
+    "sensors": {
+      "cricket": {
+        "timeseries": [
+          "temperature",
+          "humidity",
+          "CO2",
+          "light"
+        ],
+        "icons": [
+          "temperature-high",
+          "tint",
+          "smog",
+          "sun"
+        ],
+        "prefixes": [
+          "°C",
+          "%",
+          "ppm",
+          "lux"
+        ],
+        "status": {
+          "temperature": {
+            "max": 50,
+            "min": -15,
+            "limits": {
+              "default": {
+                "label": "cold",
+                "color": "#197AB8"
+              },
+              "20": {
+                "label": "great",
+                "color": "#28A745"
+              },
+              "24": {
+                "label": "hot",
+                "color": "#DC3545"
+              }
+            }
+          },
+          "CO2": {
+            "max": 1000,
+            "min": 0,
+            "limits": {
+              "default": {
+                "label": "great",
+                "color": "#28A745"
+              },
+              "450": {
+                "label": "average",
+                "color": "#FFC107"
+              },
+              "700": {
+                "label": "poor",
+                "color": "#dc3545"
+              }
+            }
+          },
+          "light": {
+            "max": 1000,
+            "min": 0,
+            "limits": {
+              "default": {
+                "label": "dark",
+                "color": "#FFC107"
+              },
+              "250": {
+                "label": "sunny",
+                "color": "#28A745"
+              }
+            }
+          },
+          "humidity": {
+            "max": 100,
+            "min": 0,
+            "limits": {
+              "default": {
+                "label": "dry",
+                "color": "#17A2B8"
+              },
+              "30": {
+                "label": "normal",
+                "color": "#197ab8"
+              },
+              "70": {
+                "label": "wet",
+                "color": "#1c53b8"
+              }
+            }
+          }
+        },
+        "type": "Azimut Cricket"
+      }
+    }
+  }
+}
